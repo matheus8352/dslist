@@ -29,4 +29,9 @@ public class GameService {
 	public List<GameMinDTO> findAll() {
 		return repository.findAll().stream().map(GameMinDTO::new).toList();
 	}
+	
+	@Transactional(readOnly = true)
+	public List<GameMinDTO> findByList(Long listId) {
+		return repository.findByList(listId).stream().map(GameMinDTO::new).toList();
+	}
 }
