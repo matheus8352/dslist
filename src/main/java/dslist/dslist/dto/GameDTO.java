@@ -6,7 +6,7 @@ import org.springframework.beans.BeanUtils;
 
 import dslist.dslist.entities.Game;
 
-public class GameDTO implements Serializable{
+public class GameDTO implements Serializable {
 
 	private static final long serialVersionUID = -9203685847961897854L;
 
